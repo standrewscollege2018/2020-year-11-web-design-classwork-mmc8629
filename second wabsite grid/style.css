@@ -1,0 +1,56 @@
+/*Styles*/
+/*getting rid of set margins*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/*set backround colour*/
+body {
+  background-color: rgb(245, 215, 66);
+}
+
+/*Banner Styles*/
+/*To customize the class/container use ".name of class{}"  */
+.banner-container {
+  /*Choose the type of display format use "display: ___;"   */
+  display: grid;
+  /*choose a grid template by "grid-template-___:"
+  followed by the pixel size, % per box. Or "_fr" being how much of the page the boxes take up.
+  If you want to repeat size use ":repeat(number of times, fraction );"*/
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/*logo styles*/
+.logo {
+  background-color: rgb(245, 215, 66);
+  padding: 20px;
+}
+
+/*Navbar styles*/
+.navbar {
+  background-color: rgb(0,0,0);
+  color: rgb(255,255,255)
+  padding: 20px;
+}
+
+/*Formatting cards in content area*/
+.col-container {
+  display : grid;
+  grid-template-columns: 50% 50%;
+}
+
+.left-col {
+  background-color: rgb(141, 120, 10);
+}
+
+.right-col {
+  background-color: rgb(21, 123, 51);
+}
+
+.left-col-2 {
+
+}
+
+.right-col-2 {
+
+}

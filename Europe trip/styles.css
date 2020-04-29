@@ -1,0 +1,52 @@
+/*stylesheet for europe website*/
+
+/*remove all margins and padding*/
+* {
+  padding: 0px;
+  margin: 0px;
+
+}
+
+body{
+  background-color: rgb(55, 20, 90);
+
+  color: rgb(1, 211, 14);
+
+  font-family: Signature;
+}
+
+/*set new font*/
+@font-face {
+  /*Here, font-family means the name that i am going to use for font*/
+  font-family: Signature;
+  src:url("Fonts/ComicNeueSansID.ttf");
+}
+
+/*format main headings */
+h1 {
+  color: rgb(25, 122, 220);
+  padding-left: 30px;
+  padding-bottom: 10px;
+
+
+font-family: Signature;
+}
+
+/*formating links*/
+a {
+  color: rgb(99, 176, 12);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(13, 16, 219);
+  text-decoration: line-through;
+}
+
+a:active {
+  color: rgb(135, 18, 21);
+}
+
+a:visited {
+  color: rgb(153, 19, 171);
+}

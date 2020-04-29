@@ -1,0 +1,100 @@
+/* .css is what is used to made a website more interesting.
+it uses a different type of code so to comment use -->*/
+
+/* My style sheet*/
+
+
+/* when ever we make a rule/prettify it we use what we are changing: body {
+} */
+
+body {
+
+  /* to change the background use"background-color:" then colour spectrum(); */
+  background-color: rgb(155, 20, 123);
+
+    /* Another way to do it is use "#" which is done by a*/
+
+  /*To change the colour of the text use "color:", then colour spectrum(); */
+  color: rgb( 190, 213, 45);
+}
+
+/*to add new instlled font use "@fontface {font-family: choose name of font;
+  src: url(name of font file in filder);
+}"*/
+@font-face {
+  font-family: Subspace;
+  src:url(Subspace.otf);
+}
+
+/*to changing heading characteristics use the heading tag "h1"*/
+h1 {
+  background-color: rgb(35, 172, 21);
+  color: rgb(123, 127, 123);
+  /*to change font we use will use a variety of commands*/
+  /*the user of the sight may not have the same fonts as us, so set backup fonts
+              primary, backup 1,   backup 2 etc   */
+  font-family: Subspace, Calibri, sans-serif;
+  /*download fonts for all to see by dropping the file into the site folder*/
+}
+
+p {
+  font-family: Arial, cursive, serif;
+}
+
+/*Formatting links and their states. "a" is for links*/
+a {
+  color: rgb(137, 52, 235);
+  /*to change some parts of the links use "text decoration:___;" */
+  /*to get rid of the the uderline use "text decoration: none;"*/
+  text-decoration: none;
+}
+
+/*you can also change its features during different states
+ use a:_____{} to choose its state. for the hover state use "a:hover {}"*/
+ a:hover {
+   text-decoration: underline;
+   color: rgb(242, 27, 123);
+ }
+
+
+/*to select everything use "*" */
+* {
+  /*Margins and padding are what gives things spacing and boundries
+  it is measured in pixles like"0px. Padding and magins can be applied to all sides or
+  specific ones. use "padding:__;" or "margin:___;"*/
+  padding: 0px;
+  margin: 0px;
+}
+
+/*Mucking around with the padding and margins of the headings and paragraphs*/
+h1 {
+padding-left: 20px;
+padding-right: 20px;
+margin-right: 10px;
+padding-top: 20px;
+padding-bottom: 20px;
+margin-bottom: 25px;
+}
+
+p {
+  /*you cna also set margins/ padding in one line by using "margin: _px, _px, _px, _px"  */
+  margin: 20px 20px 20px 20px;
+
+  /*There is alse "line-height" which changes the height between each line of the paragraph */
+  line-height: 30px
+}
+
+/*How to change aspects of the lists*/
+ul {
+  margin-left: 18px;
+  font-family: Subspace, Calibri, serif;
+  margin-bottom: 5px;
+
+  /*to change the bullet point icon type "list-style-type:"*/
+  list-style-type: square;
+}
+
+/*List items also need their own margins */
+li{
+  margin-bottom: 10px;
+}
