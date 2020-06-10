@@ -1,0 +1,65 @@
+/*remove all pre-set padding/margins */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Formatting navbar*/
+
+.nav-container {
+  width: 100%;
+  background-color: black;
+  padding: 20px;
+}
+
+/*navbar itself*/
+.nav {
+  max-width: 1720px;
+
+  /*set right and left margins to auto , this centres the box inside to the
+  nav-container/makes the navbar centre*/
+  margin: 0 auto;
+  display: grid;
+/*How it works is: 1st and 3rd even parts, "auto" will stretch to fit the logo,      */
+  grid-template-columns: 1fr auto 1fr;
+}
+
+.logo {
+  color: red;
+}
+/*changing characteristics of links in navbar */
+.nav a {
+  color:white;
+  font-family: Arial, serif;
+  text-decoration: none;
+}
+
+/*This is another way of sectioning up the navbar, but  basically exact same as
+ "grid-template-comumns" method*/
+.left-menu {
+  grid-column: 1;
+}
+.logo{
+  grid-column: 2;
+}
+/*Format bars*/
+.burger-white {
+  color: white;
+}
+
+/*code to hide the berger menu*/
+/*Id's are refered to as "#_name_, ._name_"*/
+#nav-toggle, .burger-menu {
+  display: none;
+}
+
+/* Media query for when the screen gets small enough, burger-icon will pop up
+and store Links in a drop down menu*/
+@media only screen and (max-width: 1000px) {
+  .burger-menu {
+    display: inline-block;
+  }
+  .left-menu {
+    display: none;
+  }
+}

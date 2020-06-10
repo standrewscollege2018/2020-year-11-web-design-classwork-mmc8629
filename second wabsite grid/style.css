@@ -58,6 +58,9 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
   /*To make pictures/content not go over curve edge of box use "overflow: hidden;"*/
   overflow: hidden;
+
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 /*dealing with images in cards*/
